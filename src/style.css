@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist-Mono";
+  src: local("Geist-Mono"),
+    url("./fonts/GeistMono-Medium.otf") format("opentype");
+}
+
+html,
+body {
+  @apply bg-dark;
+}
+
+.ace_scrollbar .ace_scrollbar-v {
+  @apply bg-dark;
+}
+
+body .ace_scrollbar-v {
+  @apply scrollbar-thin scrollbar-thumb-[#282c34] scrollbar-track-[#1e2227];
+}
+
+body .ace_scrollbar-h {
+  @apply scrollbar-thin scrollbar-thumb-[#282c34] scrollbar-track-[#1e2227];
+}
